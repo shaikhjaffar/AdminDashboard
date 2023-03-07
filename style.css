@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+
+.parentList{
+    padding: 2px;
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
+}
+
+nav{
+    width: 20%;
+    border: 1px solid black;
+text-align: center;
+padding: 10px;
+min-width: 200px;
+}
+ section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+ }
+ .storeid{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    min-width: 150px;
+ }
+.storeid label{
+    padding: 5px;
+    border: 0.5px solid black;
+    text-align: center;
+    margin-top: 10px;
+}
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    min-width: 150px;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
+  button{
+    background: #0d45a5;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    width: 20%;
+    min-width: 150px;
+  }
+  .rightinfo{
+  position: fixed;
+  right: 0px;
+  top: 80px;
+
+}
+  .header{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header li {
+    list-style: none;
+  }
+
+.head{
+    width: 100%;
+}
+.heading{
+    display: grid;
+    place-items: center;
+}
+.content {
+    margin-left: 10%;
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: red;
+}
+@media screen and (max-width:600px) {
+    .rightinfo{
+        display: none;
+    }
+}
